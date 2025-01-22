@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cod-gray: #070706;
+  --color-yellow: #ff9b00;
+  --color-foggy-gray: #cecebe;
+  --color-boulder: #7c7c7c;
+}
+
+body {
+  background: white;
+  color: var(--color-cod-gray);
+}
+
+/* Add button styles */
+.btn,
+.btn-primary,
+button[type="submit"],
+button[type="button"] {
+  background-color: #ff9b00 !important;
+  border-color: #ff9b00 !important;
+  color: white !important;
+  height: 38px;
+  padding: 0 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.btn:hover,
+.btn-primary:hover,
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #e68a00 !important;
+  border-color: #e68a00 !important;
+}

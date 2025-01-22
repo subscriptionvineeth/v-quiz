@@ -1,0 +1,107 @@
+.navbar {
+  background: white;
+  border-bottom: 1px solid #e5e7eb; /* Foggy Gray */
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #070706; /* Cod Gray */
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.nav-logo img {
+  height: 52px;
+  width: auto;
+}
+
+.nav-link {
+  color: #7c7c7c; /* Boulder */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #070706; /* Cod Gray */
+}
+
+.nav-link.active {
+  color: #070706; /* Cod Gray */
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff9b00; /* Yellow */
+  border-radius: 2px;
+}
+
+/* Add a subtle animation for the underline */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #ff9b00; /* Yellow */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #070706; /* Cod Gray */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #7c7c7c; /* Boulder */
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #070706; /* Cod Gray */
+} 
